@@ -1,0 +1,65 @@
+<form (ngSubmit)="addDetails()">
+
+	<div class="form-group">
+		<label for="age">Name</label> <input type="text"
+			class="form-control" id="username" align="center" size="250px"
+			required [(ngModel)]="userDetails.username" name="username">
+	</div>
+
+	<div class="form-group">
+		<label for="age">Identification Card</label> <input type="text"
+			class="form-control" id="age" required
+			[(ngModel)]="userDetails.age" name="age">
+	</div>
+
+	<div class="form-group">
+		<label for="age">Address Line 1</label> <input type="text"
+			class="form-control" id="currentMedication" required
+			[(ngModel)]="userDetails.currentMedication" name="age">
+	</div>
+	
+	<div class="form-group">
+		<label for="age">Address Line 2</label> <input type="text"
+			class="form-control" id="healthConditions" required
+			[(ngModel)]="userDetails.healthConditions" name="age">
+	</div>
+	
+	<div class="form-group">
+		<label for="age">State</label> <input type="text"
+			class="form-control" id="bloodType" required
+			[(ngModel)]="userDetails.bloodType" name="age">
+	</div>
+	
+	<div class="form-group">
+		<label for="age">Postcode</label> <input type="text"
+			class="form-control" id="goToHospital" required
+			[(ngModel)]="userDetails.goToHospital" name="age">
+	</div>
+	
+		<div class="form-group">
+		<label for="age">Contact Number</label> <input type="text"
+			class="form-control" id="emerContact1" required
+			[(ngModel)]="userDetails.emerContact1" name="age">
+	</div>
+	
+		<div class="form-group">
+		<label for="age">Race</label> <input type="text"
+			class="form-control" id="emerContact2" required
+			[(ngModel)]="userDetails.emerContact2" name="age">
+	</div>
+	
+		<div class="form-group">
+		<label for="age">Religion</label> <input type="text"
+			class="form-control" id="address" required
+			[(ngModel)]="userDetails.address" name="age">
+	</div>
+	
+		<div class="form-group">
+		<label for="age">Occupation</label> <input type="text"
+			class="form-control" id="generalInterests" required
+			[(ngModel)]="userDetails.generalInterests" name="age">
+	</div>
+	
+	<button type="submit" class="btn btn-success">Submit</button>
+	
+</form>

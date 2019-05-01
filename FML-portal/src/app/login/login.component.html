@@ -1,0 +1,29 @@
+<div class="center">
+	<img class="img-fluid img-circle resize img-hover"
+		src="assets/images/goldBuddyLogo.jpg">
+	<form (ngSubmit)="login()">
+		<h1>Welcome to CIMB Clicks</h1>
+		<div class="form-group">
+			<label for="age">Username</label> <input type="text"
+				class="form-control" id="username" align="center" size="250px"
+				required [(ngModel)]="user.username" name="Username">
+		</div>
+		<div class="form-group">
+			<label for="age">Password</label> <input type="password"
+				class="form-control" id="password" required
+				[(ngModel)]="user.password" name="Password">
+		</div>
+
+		<button type="submit" class="btn btn-success">Login</button>
+	</form>
+
+	<router-outlet></router-outlet>
+	<br>
+	<button class="btn btn-primary" (click)="redirectNewUser()">Register
+		User</button>
+	<button class="btn btn-primary" (click)="redirectNewClient()">CIMB Officer</button>
+
+</div>
+
+
+

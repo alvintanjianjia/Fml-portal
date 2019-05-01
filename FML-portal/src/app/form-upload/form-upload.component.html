@@ -1,0 +1,29 @@
+
+<div *ngIf="currentFileUpload" class="progress">
+</div>
+ 
+<label class="btn btn-default">
+	<input type="file" (change)="selectFile($event)">
+</label>
+ 
+<button class="btn btn-success" [disabled]="!selectedFiles"
+	(click)="upload()">Upload</button>
+	
+<!-- Development Purposes
+<button (click)="getAllImageFiles()">Get All Files</button>
+<button (click)="test()">test</button>
+<button (click)="showfiles()">Show files</button>  
+-->
+
+
+
+
+
+<div *ngIf="isDataLoadedImage">
+	<div *ngFor="let file of listFiles">
+		<p>{{file}}</p>
+		<img src= "http://localhost:8080/api/retrieve/imagefile?filename={{file}}&username={{currentUser}}" style="max-width:350px"/>
+		<button (click)="downloadImage()">Download Image</button>
+		<button (click)="deleteFile(file,currentUser)">Delete Image</button>
+	</div>
+</div>

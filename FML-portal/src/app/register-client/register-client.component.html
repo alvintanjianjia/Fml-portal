@@ -1,0 +1,40 @@
+<div class="center">
+	<h1>Register as a Gold Buddy Partner today!</h1>
+	<img class="img-fluid img-circle resize img-hover"
+		src="assets/images/goldBuddyLogo.jpg">
+	<form (ngSubmit)="register()">
+
+		<div class="form-group">
+			<label for="age">Username</label> <input type="text"
+				class="form-control" id="username" required
+				[(ngModel)]="client.username" name="username">
+		</div>
+
+		<div class="form-group">
+			<label for="age">Password</label> <input type="password"
+				class="form-control" id="password" required
+				[(ngModel)]="client.password" name="age">
+		</div>
+
+		<div class="form-group">
+			<label for="age">Company Name</label> <input type="text"
+				class="form-control" id="password" required
+				[(ngModel)]="client.companyName" name="age">
+		</div>
+
+		<div class="form-group">
+			<label for="age">Industry</label> <input type="text"
+				class="form-control" id="Industry Type" required
+				[(ngModel)]="client.industry" name="age">
+		</div>
+
+
+
+		<button type="submit" class="btn btn-success">Submit</button>
+
+
+	</form>
+	<br> <a routerLink="/Login">Back to Login</a>
+
+
+</div>
